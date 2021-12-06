@@ -1,0 +1,61 @@
+:root {
+  --blue: rgb(0, 140, 255);
+}
+
+/* Nav Bar */
+.navbar {
+  background-color: black;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar > nav {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.nav_links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav_links > li {
+  margin-right: 35px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav_links > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+/* nav links howver effect*/
+.nav_links > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  color: var(--blue);
+
+  transform: scaleX(0);
+  transform-origin: left top;
+  transition: transform 250ms ease-in-out;
+}
+
+.nav_links > li > a:hover::after {
+  transform: scaleX(1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}

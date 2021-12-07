@@ -6,8 +6,11 @@
 .navbar {
   background-color: black;
   height: 70px;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  position: fixed;
+  top: 0;
 }
 
 .navbar > nav {
@@ -34,7 +37,7 @@
   position: relative;
 }
 
-/* nav links howver effect*/
+/* nav links hover effect*/
 .nav_links > li > a::after {
   content: "";
   position: absolute;
@@ -76,4 +79,69 @@
 }
 
 .greeting {
+  font-size: 30px;
+}
+
+.desc_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.desc {
+  margin-right: 10px;
+  font-size: 35px;
+}
+
+.icons > svg {
+  margin-right: 10px;
+}
+
+/* About */
+
+.about {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 15%;
+}
+
+.pic > img {
+  border-radius: 100%;
+}
+
+.about_header {
+  color: var(--blue);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about_text {
+  width: 40%;
+  font-size: 25px;
+}
+
+/* Skills */
+
+.skills {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_header {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.skills_grid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
 }

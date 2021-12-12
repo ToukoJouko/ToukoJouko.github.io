@@ -3,6 +3,7 @@
 }
 
 /* Nav Bar */
+
 .navbar {
   background-color: black;
   height: 70px;
@@ -86,7 +87,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 .desc {
@@ -127,7 +127,7 @@
 /* Skills */
 
 .skills {
-  background-color: green;
+  /*background-color: green;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,4 +144,47 @@
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
+}
+
+.skills_grid > div {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Project Card */
+
+.project_card {
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: 5px;
+  border-color: var(--blue);
+  border-style: solid;
+}
+
+.project_name {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.image_container {
+  width: 100%;
+}
+
+.image_container > img {
+  max-width: 100%;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-color: var(--blue);
+}
+
+.info_button {
+  background-color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
 }

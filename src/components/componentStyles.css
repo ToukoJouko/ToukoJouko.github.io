@@ -182,9 +182,21 @@
   border-color: var(--blue);
 }
 
+.info {
+  width: 100%;
+  position: relative;
+}
+
 .info_button {
   background-color: white;
   font-size: 20px;
   padding: 5px;
   margin-bottom: 5px;
+  text-align: center;
+}
+
+.info_dropdown {
+  position: absolute;
+  background-color: var(--blue);
+  height: 0px;
 }

@@ -1,18 +1,14 @@
 import React from "react";
+import DropDown from "./DropDown";
 
 const ProjectCard = (props) => {
   return (
     <div className="project_card">
       <div className="project_name">{props.name}</div>
-      <div className="info">
-        <div className="info_button" id="info_button">
-          SHOW INFO
-        </div>
-        <div className="info_dropdown" id="info_dropdown">
-          Dictonary app made with react. Fetches word data by using the wordnik
-          API.
-        </div>
-      </div>
+      <DropDown>
+        This is a great application which includes many amazing features. This
+        is the noicw application which makes your life better and easier
+      </DropDown>
       <div className="image_container">
         <img src={props.image} alt={props.alt} />
       </div>

@@ -35,8 +35,24 @@ const NavBar = () => {
           </g>
         </svg>
       </div>
-      <nav>
+      <nav className="standard_nav">
         <ul className="nav_links">
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#skills">SKILLS</a>
+          </li>
+          <li>
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <nav className="mobile_nav">
+        <ul className="mobile_nav_links">
           <li>
             <a href="#about">ABOUT</a>
           </li>

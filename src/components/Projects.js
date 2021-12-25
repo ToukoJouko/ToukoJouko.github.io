@@ -11,9 +11,24 @@ const Projects = () => {
         bichhhh
       </p>
       <div className="project_cards">
-        <ProjectCard name={"PROJECT NAME"} image={noice_image} />
-        <ProjectCard name={"PROJECT NAME"} image={noice_image} />
-        <ProjectCard name={"PROJECT NAME"} image={noice_image} />
+        <ProjectCard
+          name={"PROJECT NAME"}
+          image={noice_image}
+          demoLink={"https://www.youtube.com/watch?v=a8c5wmeOL9o"}
+          repo={"https://www.youtube.com/watch?v=ubY0rEoe6JI"}
+        />
+        <ProjectCard
+          name={"PROJECT NAME"}
+          image={noice_image}
+          demoLink={"https://www.youtube.com/watch?v=a8c5wmeOL9o"}
+          repo={"https://www.youtube.com/watch?v=ubY0rEoe6JI"}
+        />
+        <ProjectCard
+          name={"PROJECT NAME"}
+          image={noice_image}
+          demoLink={"https://www.youtube.com/watch?v=a8c5wmeOL9o"}
+          repo={"https://www.youtube.com/watch?v=ubY0rEoe6JI"}
+        />
       </div>
     </div>
   );

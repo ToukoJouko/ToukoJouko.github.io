@@ -10,7 +10,7 @@ import Contacts from "./components/Contacts";
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <NavBar />
       <Intro />
       <About />

@@ -2,6 +2,10 @@
   --blue: rgb(0, 140, 255);
 }
 
+.app {
+  margin-top: 40vh;
+}
+
 /* Nav Bar */
 
 .mobile_nav {
@@ -16,7 +20,7 @@
   flex-direction: row;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .standard_nav {
@@ -33,7 +37,7 @@
 
 .nav_links > li {
   margin-right: 2rem;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -89,11 +93,16 @@
 
   .mobile_nav_links > li {
     font-weight: bold;
+    font-size: 2vh;
   }
 
   .mobile_nav_links > li > a {
     color: #ffffff;
     text-decoration: none;
+  }
+
+  .about_text {
+    max-width: 90%;
   }
 }
 
@@ -104,7 +113,6 @@
   flex-direction: column;
   color: white;
   margin-left: 1rem;
-  margin-top: 18%;
 }
 
 .name {
@@ -140,7 +148,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 15%;
+  margin-top: 40vh;
 }
 
 .pic > img {
@@ -169,6 +177,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 40vh;
 }
 
 .skills_header {
@@ -194,7 +203,7 @@
 
 .project_card {
   width: 330px;
-  height: 400px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,6 +225,7 @@
 
 .image_container > img {
   max-width: 100%;
+  max-height: 100%;
   border-top: 5px solid;
   border-bottom: 5px solid;
   border-color: var(--blue);
@@ -232,6 +242,9 @@
   padding: 5px;
   margin-bottom: 5px;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .slide-enter {
@@ -243,7 +256,7 @@
 }
 
 .slide-enter-active {
-  height: 200px;
+  height: 185px;
   position: absolute;
   background-color: var(--blue);
   color: white;
@@ -252,26 +265,48 @@
 }
 
 .slide-enter-done {
-  height: 200px;
+  height: 185px;
   position: absolute;
   background-color: var(--blue);
   color: white;
   opacity: 90%;
 }
 
-.slide-exit {
-  height: 200px;
-  position: absolute;
-  background-color: var(--blue);
-  opacity: 90%;
+.project_links {
+  display: flex;
 }
 
-.slide-exit-active {
-  height: 0px;
+.link_button {
+  width: 100px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.link_button::after,
+.dropdown_button::after,
+.content::after {
+  content: "";
   position: absolute;
-  background-color: var(--blue);
-  opacity: 90%;
-  transition: height 300ms ease;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--blue);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+}
+
+.link_button:hover::after,
+.dropdown_button:hover::after,
+.content:hover::after {
+  transform: scaleX(1);
 }
 
 /* Projects */
@@ -281,6 +316,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 40vh;
 }
 
 .projects_desc {
@@ -315,13 +351,12 @@
   justify-content: center;
   font-weight: bold;
   margin: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 a {
   text-decoration: none;
-}
-.content:hover {
-  background-color: var(--blue);
 }
 
 /* Contacts */

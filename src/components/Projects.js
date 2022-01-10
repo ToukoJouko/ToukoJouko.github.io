@@ -1,35 +1,50 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import noice_image from "./images/noice.jpg";
+import säju_image from "./images/säju.png";
+import dict_image from "./images/dict.png";
+import vs_image from "./images/vs.png";
 
 const Projects = () => {
   return (
     <div>
-      <div className="space" id="projects"></div>
       <div className="projects">
-        <div className="projects_header">PROJECTS</div>
+        <h2 className="projects_header">PROJECTS</h2>
         <p className="projects_desc">
-          Tähän selitystä että jpp tässä pari ptrojektia, lisää löytyy
-          githubista bichhhh
+          Here are some of the projects i have created. Feel free to check out
+          my <a href="https://github.com/ToukoJouko">github</a> for more.
         </p>
         <div className="project_cards">
           <ProjectCard
-            name={"PROJECT NAME"}
-            image={noice_image}
-            demoLink={"https://www.youtube.com/watch?v=a8c5wmeOL9o"}
-            repo={"https://www.youtube.com/watch?v=ubY0rEoe6JI"}
+            name={"DICTIONARY APP"}
+            image={dict_image}
+            info={
+              "Simple dictionary application made with react. Goal here was to make an app which fetches data from an API, and practice using state and effect hooks."
+            }
+            demoLink={"https://dictionary---app.herokuapp.com/"}
+            demoButton={"DEMO"}
+            repo={"https://github.com/ToukoJouko/react-dictionary-app"}
           />
           <ProjectCard
-            name={"PROJECT NAME"}
-            image={noice_image}
-            demoLink={"https://www.youtube.com/watch?v=a8c5wmeOL9o"}
-            repo={"https://www.youtube.com/watch?v=ubY0rEoe6JI"}
+            name={"VsBOSTRO"}
+            image={vs_image}
+            info={
+              "A VS Code extension which allows the user to print student restaurant menus to the VS Code console. Made as a joke, but it turned out to be somewhat useful and i plan to add more menus to the extension in the future."
+            }
+            demoLink={
+              "https://marketplace.visualstudio.com/items?itemName=ToukoJouko.vsbostro-extension&ssr=false#overview"
+            }
+            demoButton={"VS MARKET"}
+            repo={"https://github.com/ToukoJouko/VsBostro"}
           />
           <ProjectCard
-            name={"PROJECT NAME"}
-            image={noice_image}
-            demoLink={"https://www.youtube.com/watch?v=a8c5wmeOL9o"}
-            repo={"https://www.youtube.com/watch?v=ubY0rEoe6JI"}
+            name={"SÄHKÖINEN JULKAISEMINEN"}
+            image={säju_image}
+            info={
+              "Website made with Wordpress which includes information about HTML and CSS. The goal of this project was to learn the basics of Wordpress, and how to create simple and user friendly websites."
+            }
+            demoLink={"https://sahkoinenjulkaiseminen677578811.wordpress.com/"}
+            demoButton={"DEMO"}
+            repo={"https://github.com/ToukoJouko/Sahkoinen-julkaiseminen"}
           />
         </div>
       </div>

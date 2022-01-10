@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio-website/static/css/main.a4433cca.chunk.css",
+    "main.css": "/Portfolio-website/static/css/main.0d8cb7c9.chunk.css",
     "main.js": "/Portfolio-website/static/js/main.b252acea.chunk.js",
     "main.js.map": "/Portfolio-website/static/js/main.b252acea.chunk.js.map",
     "runtime-main.js": "/Portfolio-website/static/js/runtime-main.e4f94752.js",
@@ -8,19 +8,19 @@
     "static/js/2.3ad505e3.chunk.js": "/Portfolio-website/static/js/2.3ad505e3.chunk.js",
     "static/js/2.3ad505e3.chunk.js.map": "/Portfolio-website/static/js/2.3ad505e3.chunk.js.map",
     "index.html": "/Portfolio-website/index.html",
-    "static/css/main.a4433cca.chunk.css.map": "/Portfolio-website/static/css/main.a4433cca.chunk.css.map",
+    "static/css/main.0d8cb7c9.chunk.css.map": "/Portfolio-website/static/css/main.0d8cb7c9.chunk.css.map",
     "static/js/2.3ad505e3.chunk.js.LICENSE.txt": "/Portfolio-website/static/js/2.3ad505e3.chunk.js.LICENSE.txt",
     "static/media/dict.0a8f121c.png": "/Portfolio-website/static/media/dict.0a8f121c.png",
     "static/media/express.02a06771.png": "/Portfolio-website/static/media/express.02a06771.png",
     "static/media/naamakuva.06822cb3.png": "/Portfolio-website/static/media/naamakuva.06822cb3.png",
-    "static/media/index.css": "/Portfolio-website/static/media/portfolio_bg.f53e7226.jpg",
+    "static/media/index.css": "/Portfolio-website/static/media/portfolio_bg.ca95cffa.jpg",
     "static/media/säju.4a385591.png": "/Portfolio-website/static/media/säju.4a385591.png",
     "static/media/vs.40850600.png": "/Portfolio-website/static/media/vs.40850600.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e4f94752.js",
     "static/js/2.3ad505e3.chunk.js",
-    "static/css/main.a4433cca.chunk.css",
+    "static/css/main.0d8cb7c9.chunk.css",
     "static/js/main.b252acea.chunk.js"
   ]
 }

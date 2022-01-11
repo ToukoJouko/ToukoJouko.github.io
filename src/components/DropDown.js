@@ -20,7 +20,7 @@ const DropDown = (props) => {
           <div>{open && props.children}</div>
         </div>
       ) : (
-        <div></div>
+        <div>gdsfghdfgdsfgds</div>
       )}
     </div>
   );

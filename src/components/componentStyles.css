@@ -285,6 +285,11 @@
 
 .slide-enter {
   height: 0px;
+  position: absolute;
+  background-color: var(--iceBlue);
+  color: white;
+  opacity: 90%;
+  padding: 3px;
 }
 
 .slide-enter-active {

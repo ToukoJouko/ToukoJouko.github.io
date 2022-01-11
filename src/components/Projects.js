@@ -30,7 +30,7 @@ const Projects = () => {
             image={vs_image}
             alt={"vscode image"}
             info={
-              "A VS Code extension which allows the user to print student restaurant menus to the VS Code console. Made as a joke, but it turned out to be somewhat useful and i plan to add more menus to the extension in the future."
+              "A VS Code extension which allows the user to print student restaurant menus to the VS Code console. Made if for fun and to learn javascript, but it turned out to be somewhat useful and i plan to add more menus to the extension in the future."
             }
             demoLink={
               "https://marketplace.visualstudio.com/items?itemName=ToukoJouko.vsbostro-extension&ssr=false#overview"

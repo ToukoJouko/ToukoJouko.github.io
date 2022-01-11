@@ -100,10 +100,6 @@
     color: #ffffff;
     text-decoration: none;
   }
-
-  .mobile_nav_links > li > a:hover {
-    color: var(--iceBlue);
-  }
 }
 
 /* Intro */
@@ -290,6 +286,7 @@
   color: white;
   opacity: 0.9;
   padding: 3px;
+  line-height: 1.2;
 }
 
 .project_links {
@@ -308,26 +305,28 @@
   z-index: 1;
 }
 
-.link_button::after,
-.dropdown_button::after,
-.content::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: var(--iceBlue);
-  z-index: -1;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 300ms ease-in-out;
-}
+@media (hover: hover) {
+  .link_button::after,
+  .dropdown_button::after,
+  .content::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--iceBlue);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease-in-out;
+  }
 
-.link_button:hover::after,
-.dropdown_button:hover::after,
-.content:hover::after {
-  transform: scaleX(1);
+  .link_button:hover::after,
+  .dropdown_button:hover::after,
+  .content:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 /* Projects */

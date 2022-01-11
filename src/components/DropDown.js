@@ -17,10 +17,10 @@ const DropDown = (props) => {
       </div>
       {open ? (
         <div className="slide">
-          <div>{open && props.children}</div>
+          <div>fdsafdsafdsafasd</div>
         </div>
       ) : (
-        <div>gdsfghdfgdsfgds</div>
+        ""
       )}
     </div>
   );

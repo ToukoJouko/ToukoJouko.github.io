@@ -265,7 +265,6 @@
   border-top: 5px solid;
   border-bottom: 5px solid;
   border-color: var(--iceBlue);
-  z-index: 0;
 }
 
 .dropdown {
@@ -291,7 +290,6 @@
   color: white;
   opacity: 90%;
   padding: 3px;
-  z-index: 1;
 }
 
 .project_links {

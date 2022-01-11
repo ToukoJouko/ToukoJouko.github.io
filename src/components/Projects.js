@@ -17,6 +17,7 @@ const Projects = () => {
           <ProjectCard
             name={"DICTIONARY APP"}
             image={dict_image}
+            alt={"dictapp image"}
             info={
               "Simple dictionary application made with react. Goal here was to make an app which fetches data from an API, and practice using state and effect hooks."
             }
@@ -27,6 +28,7 @@ const Projects = () => {
           <ProjectCard
             name={"VsBOSTRO"}
             image={vs_image}
+            alt={"vscode image"}
             info={
               "A VS Code extension which allows the user to print student restaurant menus to the VS Code console. Made as a joke, but it turned out to be somewhat useful and i plan to add more menus to the extension in the future."
             }
@@ -39,6 +41,7 @@ const Projects = () => {
           <ProjectCard
             name={"SÄHKÖINEN JULKAISEMINEN"}
             image={säju_image}
+            alt={"wp site image"}
             info={
               "Website made with Wordpress which includes information about HTML and CSS. The goal of this project was to learn the basics of Wordpress, and how to create simple and user friendly websites."
             }

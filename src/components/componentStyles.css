@@ -95,11 +95,6 @@
     font-weight: bold;
     font-size: 2vh;
   }
-
-  .mobile_nav_links > li > a {
-    color: #ffffff;
-    text-decoration: none;
-  }
 }
 
 /* Intro */
@@ -279,7 +274,23 @@
   cursor: pointer;
 }
 
-.slide {
+.slide-enter {
+  opacity: 0;
+  height: 0;
+}
+
+.slide-enter-active {
+  height: 180px;
+  position: absolute;
+  background-color: var(--iceBlue);
+  color: white;
+  opacity: 0.9;
+  transition: opacity 300ms, height 200ms;
+  padding: 3px;
+  line-height: 1.2;
+}
+
+.slide-enter-done {
   height: 180px;
   position: absolute;
   background-color: var(--iceBlue);
@@ -305,6 +316,7 @@
   z-index: 1;
 }
 
+/* disable hover effects on mobile */
 @media (hover: hover) {
   .link_button::after,
   .dropdown_button::after,

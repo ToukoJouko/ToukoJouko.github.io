@@ -283,26 +283,7 @@
   cursor: pointer;
 }
 
-.slide-enter {
-  height: 0px;
-  position: absolute;
-  background-color: var(--iceBlue);
-  color: white;
-  opacity: 90%;
-  padding: 3px;
-}
-
-.slide-enter-active {
-  height: 180px;
-  position: absolute;
-  background-color: var(--iceBlue);
-  color: white;
-  opacity: 90%;
-  transition: height 125ms;
-  padding: 3px;
-}
-
-.slide-enter-done {
+.slide {
   height: 180px;
   position: absolute;
   background-color: var(--iceBlue);

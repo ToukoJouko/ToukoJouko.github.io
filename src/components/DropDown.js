@@ -22,8 +22,8 @@ const DropDown = (props) => {
     <div className="dropdown">
       <div className="dropdown_button" onClick={handleClick}>
         {open ? openText : closedText}
+        {open ? <Slide></Slide> : ""}
       </div>
-      {open ? <Slide></Slide> : ""}
     </div>
   );
 };

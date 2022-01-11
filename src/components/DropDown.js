@@ -1,14 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-const Slide = () => {
-  return (
-    <div className="slide">
-      <div>fdsafdsafdsafasd</div>
-    </div>
-  );
-};
-
 const DropDown = (props) => {
   const [open, setOpen] = useState(false);
   const closedText = "SHOW INFO";
@@ -22,8 +14,14 @@ const DropDown = (props) => {
     <div className="dropdown">
       <div className="dropdown_button" onClick={handleClick}>
         {open ? openText : closedText}
-        {open ? <Slide></Slide> : ""}
       </div>
+      {open ? (
+        <div className="slide">
+          <div>{open && props.children}</div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

@@ -288,7 +288,7 @@
   position: absolute;
   background-color: var(--iceBlue);
   color: white;
-  opacity: 90%;
+  opacity: 0.9;
   padding: 3px;
 }
 

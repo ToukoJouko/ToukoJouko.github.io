@@ -95,6 +95,12 @@
     font-weight: bold;
     font-size: 2vh;
   }
+
+  .mobile_nav_links > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+  }
 }
 
 /* Intro */
